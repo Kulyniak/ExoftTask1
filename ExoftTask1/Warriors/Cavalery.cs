@@ -10,5 +10,10 @@ namespace ExoftTask1.Warriors
     {
         int Armor = 10;
         int Punch = 15;
+        public override void AddSuperPower(ISuperPower super, int power)
+        {
+            base.AddSuperPower(super, power);
+        }
     }
+
 }
