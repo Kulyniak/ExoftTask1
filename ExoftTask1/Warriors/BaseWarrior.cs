@@ -6,10 +6,12 @@ using System.Threading.Tasks;
 
 namespace ExoftTask1.Warriors
 {
-    internal abstract class BaseWarrior
+    public abstract class BaseWarrior
     {
-        int Health = 100;
-        int Armor { get; set; }
-        int Punch { get; set; }
+        public int Health = 100;
+       public int Armor { get; set; }
+        public int Punch { get; set; }
+
+        public virtual void AddSuperPower(ISuperPower super, int power) { }
     }
 }
